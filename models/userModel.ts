@@ -1,5 +1,5 @@
 import Users from '../data/users2.json'
-import { type User } from '../data/user.type'
+import { type Userstype } from '../data/user.type'
 import { writeDataToFile } from '../utilis'
 
 
@@ -11,13 +11,14 @@ function getAll() {
 
  function getOne(id:string) {
     return new Promise((resolve,reject)=>{
-        const user=Users.find((user:User)=>user.id===id)
+        const user=Users.find((user)=>user.id===id)
         resolve(user)
     })
 }
 
-function create(user:User) {
+function create(user:Userstype) {
     return new Promise((resolve,reject)=>{
+
         const newUser={
             id:user.id,
             username:user.username,
@@ -32,4 +33,28 @@ function create(user:User) {
     })
 }
 
-export {getAll, getOne, create }
+
+function update(id:string, user) {
+    return new Promise((resolve, reject) => {
+
+        const index = Users.findIndex((user) => user.id === id)
+        Users[index] = {id, ...user}
+
+        writeDataToFile('./data/users2.json', Users);
+
+        resolve(Users[index])
+    })
+}
+
+function remove(id:string) {
+    return new Promise((resolve, reject) => {
+        let users = Users.filter((p) => p.id !== id)
+
+        writeDataToFile('./data/users2.json', users);
+
+        resolve(users)
+    })
+}
+
+
+export {getAll, getOne, create, update, remove }

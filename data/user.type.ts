@@ -1,4 +1,4 @@
-export type User={
+export type Userstype={
     id:string,
     username:string,
     age:string,

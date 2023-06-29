@@ -1,7 +1,8 @@
 [
   {
-    "id": "1",
-    "username": "Frania5",
+    "id": "2",
+    "username": "Basia",
+    "age": "35",
     "hobbies": [
       "trololo"
     ]
@@ -23,6 +24,14 @@
     "hobbies": [
       "swimming",
       "running"
+    ]
+  },
+  {
+    "id": "5",
+    "username": "Zdzichu",
+    "age": "50",
+    "hobbies": [
+      "drinking beer"
     ]
   },
   {
