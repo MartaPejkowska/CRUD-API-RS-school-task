@@ -16,6 +16,8 @@ export async function getUsers(req:http.IncomingMessage,res:http.ServerResponse)
     }
     catch(error){
         console.log(error)
+        res.writeHead(500, { 'Content-Type': 'application/json' })
+            return res.end(JSON.stringify({message:'Server Error'}))
     }
 }
 
@@ -32,6 +34,8 @@ export async function getOneUser(req:http.IncomingMessage,res:http.ServerRespons
     }
     catch(error){
         console.log(error)
+        res.writeHead(500, { 'Content-Type': 'application/json' })
+            return res.end(JSON.stringify({message:'Server Error'}))
     }
 }
 
@@ -50,19 +54,20 @@ export async function createUser(req:http.IncomingMessage,res:http.ServerRespons
 
         if (!user.username || typeof user.username !=='string')
             {res.statusCode=400
-            res.statusMessage = "Username is required and must be a string";
-
-            res.end()}
-        else if( !user.age || typeof user.age !=='number'){
-            {res.statusMessage = "Age is required and must be a number";
-            res.statusCode=400
-            res.end("Age is required and must be a number")}
-        }
-        else if( !user.hobbies || typeof user.hobbies !=='object'){
-            {res.statusMessage = "Hobbies are required and must be an array";
-            res.statusCode=400
-            res.end("Hobbies are required and must be an array")}
+            res.end(JSON.stringify({message:"Username is required and must be a string"}))
             }
+
+        else if( !user.age || typeof user.age !== 'number'){
+            res.statusCode=400
+            res.end(JSON.stringify({message:"Age is required and must be a number"}))
+            }
+
+        else if( !user.hobbies || typeof user.hobbies !=='object')
+            {
+            res.statusCode=400
+            res.end(JSON.stringify({message:"Hobbies are required and must be an array"}))
+            }
+
 
         const newUser = await User.create(user)
 
@@ -71,6 +76,8 @@ export async function createUser(req:http.IncomingMessage,res:http.ServerRespons
 
     } catch (error) {
         console.log(error)
+        res.writeHead(500, { 'Content-Type': 'application/json' })
+            return res.end(JSON.stringify({message:'Server Error'}))
     }
 }
 
@@ -85,6 +92,22 @@ export async function updateUser(req:http.IncomingMessage,res:http.ServerRespons
             const body = await getReqData(req)
 
             const { username, age, hobbies } = JSON.parse(body)
+
+            if ( username && typeof username !=='string')
+            {res.statusCode=400
+            res.end(JSON.stringify({message:"Username must be a string"}))
+            }
+
+            else if (age && typeof age !== 'number'){
+            res.statusCode=400
+            res.end(JSON.stringify({message:"Age must be a number"}))
+            }
+
+            else if(hobbies && typeof hobbies !=='object'){
+            res.statusCode=400
+            res.end(JSON.stringify({message:"Hobbies must be an array"}))
+            }
+
 
             const UserData = {
                 username: username || user['username'],
@@ -101,6 +124,8 @@ export async function updateUser(req:http.IncomingMessage,res:http.ServerRespons
 
     } catch (error) {
         console.log(error)
+        res.writeHead(500, { 'Content-Type': 'application/json' })
+            return res.end(JSON.stringify({message:'Server Error'}))
     }
 }
 
@@ -115,9 +140,11 @@ export async function deleteUser(req:http.IncomingMessage,res:http.ServerRespons
         } else {
             await User.remove(id)
             res.writeHead(200, { 'Content-Type': 'application/json' })
-            res.end(JSON.stringify({ message: `User ${id} removed` }))
+            res.end(JSON.stringify({ message: `User with id:${id} removed` }))
         }
     } catch (error) {
         console.log(error)
+        res.writeHead(500, { 'Content-Type': 'application/json' })
+            return res.end(JSON.stringify({message:'Server Error'}))
     }
 }

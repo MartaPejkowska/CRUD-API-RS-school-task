@@ -1,6 +1,6 @@
 export type Userstype={
     id:string,
     username:string,
-    age:string,
+    age:number,
     hobbies:Array<string>
 }

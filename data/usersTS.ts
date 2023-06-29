@@ -2,7 +2,7 @@ export const Users=[
   {
     "id": "1",
     "username": "Kasia",
-    "age": "25",
+    "age": 25,
     "hobbies": [
       "reading",
       "watching movies"
@@ -11,7 +11,7 @@ export const Users=[
   {
     "id": "2",
     "username": "Basia",
-    "age": "41",
+    "age": 41,
     "hobbies": [
       "walking with a dog",
       "running"
@@ -20,7 +20,7 @@ export const Users=[
   {
     "id": "3",
     "username": "Wojtek",
-    "age": "20",
+    "age": 20,
     "hobbies": [
       "playing games",
       "watching movies",
@@ -30,7 +30,7 @@ export const Users=[
   {
     "id": "4",
     "username": "Zosia",
-    "age": "45",
+    "age": 45,
     "hobbies": [
       "swimming",
       "running"
