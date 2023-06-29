@@ -1,4 +1,4 @@
-export const Users=[
+[
   {
     "id": "1",
     "username": "Kasia",
@@ -76,6 +76,14 @@ export const Users=[
     "age": "29",
     "hobbies": [
       "nothingsss"
+    ]
+  },
+  {
+    "id": "7ef028c0-96ba-4f1d-a026-7d631290b7b7",
+    "username": "kurla",
+    "age": "23",
+    "hobbies": [
+      "sdfsadf"
     ]
   }
 ]
