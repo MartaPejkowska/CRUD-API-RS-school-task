@@ -5,8 +5,6 @@ import http from 'http';
 import { type Userstype } from '../data/user.type';
 
 
-
-
 export async function getUsers(req:http.IncomingMessage,res:http.ServerResponse){
     try{
         const users= await User.getAll()
@@ -23,6 +21,7 @@ export async function getUsers(req:http.IncomingMessage,res:http.ServerResponse)
 
 export async function getOneUser(req:http.IncomingMessage,res:http.ServerResponse,id:string){
     try{
+        type GetOne = (id: string) => Promise<Userstype>;
         const user= await User.getOne(id)
 
         if(!user){
@@ -110,7 +109,7 @@ export async function updateUser(req:http.IncomingMessage,res:http.ServerRespons
 
 
             const UserData = {
-                username: username || user['username'],
+                username: username || user['username' ],
                 age: age || user['age'],
                 hobbies: hobbies || user['hobbies']
             }

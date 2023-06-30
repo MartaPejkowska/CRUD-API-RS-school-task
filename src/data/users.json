@@ -1,0 +1,73 @@
+[
+    {
+    "id": "c30ebbdd-5f57-410c-a130-1918552b5c5e",
+    "username": "Marta",
+    "age": 29,
+    "hobbies": [
+      "nothing"
+    ]
+  },
+  {
+    "id": "8c5f45ce-0c1f-483f-9205-184837549429",
+    "username": "Kasia",
+    "age": 25,
+    "hobbies": [
+      "reading",
+      "watching movies"
+    ]
+  },
+  {
+    "id": "8ddf4eff-7d66-43c2-8889-3fde44004fdd",
+    "username": "Basia",
+    "age": 41,
+    "hobbies": [
+      "walking with a dog",
+      "running"
+    ]
+  },
+  {
+    "id": "7ef028c0-96ba-4f1d-a026-7d631290b7b7",
+    "username": "Wojtek",
+    "age": 20,
+    "hobbies": [
+      "playing games",
+      "watching movies",
+      "cooking"
+    ]
+  },
+  {
+    "id": "ac4db2ad-8957-4e5a-8330-ac373fca5591",
+    "username": "Zosia",
+    "age": 45,
+    "hobbies": [
+      "swimming",
+      "running"
+    ]
+  },
+  {
+    "id": "9278450c-8137-4b91-a8cc-94e078f81915",
+    "username": "Zosia",
+    "age": 23,
+    "hobbies": [
+      "riding a bike"
+    ]
+  },
+  {
+    "id": "f2806c29-04bb-4d57-a26f-da3ca34db661",
+    "username": "Zdzichu",
+    "age": "50",
+    "hobbies": [
+      "drinking beer"
+    ]
+  },
+  {
+    "id": "cb1ebba9-ab74-4de6-bad0-2fd4d8acd0ac",
+    "username": "Tomek",
+    "age": "15",
+    "hobbies": [
+      "playing boardgames",
+      "watching movies",
+      "karate"
+    ]
+  }
+]

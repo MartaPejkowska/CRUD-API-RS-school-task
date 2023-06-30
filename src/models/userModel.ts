@@ -9,7 +9,9 @@ function getAll() {
     })
 }
 
- function getOne(id:string) {
+type GetOne = (id: string) => Promise<Userstype>;
+
+ function getOne(id:string): Promise<any>|undefined {
     return new Promise((resolve,reject)=>{
         const user=Users.find((user)=>user.id===id)
         resolve(user)
@@ -34,7 +36,7 @@ function create(user:Userstype) {
 }
 
 
-function update(id:string, user) {
+function update(id:string, user:any) {
     return new Promise((resolve, reject) => {
 
         const index = Users.findIndex((user) => user.id === id)

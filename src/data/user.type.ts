@@ -1,4 +1,4 @@
-export type Userstype={
+export interface Userstype{
     id:string,
     username:string,
     age:number,

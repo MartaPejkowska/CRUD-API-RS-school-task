@@ -5,6 +5,8 @@
   "main": "app.ts",
   "scripts": {
     "start": "npx nodemon ./app.ts",
+    "start:prod": "webpack",
+    "start:bundle":"nodemon dist/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "MP",
@@ -13,9 +15,19 @@
     "@types/uuid": "^9.0.2",
     "dotenv": "^16.3.1",
     "nodemon": "^2.0.22",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "webpack": "^5.88.1"
   },
   "devDependencies": {
-    "@types/node": "^20.3.2"
+    "@types/node": "^20.3.2",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack-cli": "^5.1.4"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   }
 }
