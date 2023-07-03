@@ -1,15 +1,7 @@
 [
-    {
-    "id": "c30ebbdd-5f57-410c-a130-1918552b5c5e",
-    "username": "Marta",
-    "age": 29,
-    "hobbies": [
-      "nothing"
-    ]
-  },
   {
     "id": "8c5f45ce-0c1f-483f-9205-184837549429",
-    "username": "Kasia",
+    "username": "Frania",
     "age": 25,
     "hobbies": [
       "reading",
@@ -68,6 +60,42 @@
       "playing boardgames",
       "watching movies",
       "karate"
+    ]
+  },
+  {
+    "id": "53074f81-166e-4847-aa7f-fc0b6fc671e3",
+    "username": "Zosia",
+    "age": 23,
+    "hobbies": [
+      "riding a bike",
+      "watching Friends"
+    ]
+  },
+  {
+    "id": "db86fcbc-20ae-46ac-ac1f-792242485a50",
+    "username": "Zosia",
+    "age": 23,
+    "hobbies": [
+      "riding a bike",
+      "watching Friends"
+    ]
+  },
+  {
+    "id": "d9f144dc-f912-47fc-b83a-0ad8b44bf17a",
+    "username": "Zosia",
+    "age": "23",
+    "hobbies": [
+      "riding a bike",
+      "watching Friends"
+    ]
+  },
+  {
+    "id": "a0375f8e-a181-4132-afce-c791deac8035",
+    "username": "",
+    "age": "23",
+    "hobbies": [
+      "riding a bike",
+      "watching Friends"
     ]
   }
 ]

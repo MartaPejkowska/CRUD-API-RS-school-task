@@ -2,6 +2,10 @@ import Users from '../data/users.json'
 import { type Userstype } from '../data/user.type'
 import { writeDataToFile } from '../utilis'
 
+import { cwd } from 'node:process';
+import path from 'node:path';
+
+const pathTofile=path.resolve('src','data','users.json')
 
 function getAll() {
     return new Promise ((resolve,reject)=>{
@@ -26,11 +30,11 @@ function create(user:Userstype) {
             username:user.username,
             age:user.age,
             hobbies:user.hobbies
-
         }
 
         Users.push(newUser)
-        writeDataToFile('./data/users.json', Users);
+
+        writeDataToFile(pathTofile, Users);
         resolve(newUser)
     })
 }
@@ -42,7 +46,7 @@ function update(id:string, user:any) {
         const index = Users.findIndex((user) => user.id === id)
         Users[index] = {id, ...user}
 
-        writeDataToFile('./data/users.json', Users);
+        writeDataToFile(pathTofile, Users);
 
         resolve(Users[index])
     })
@@ -52,7 +56,7 @@ function remove(id:string) {
     return new Promise((resolve, reject) => {
         let users = Users.filter((p) => p.id !== id)
 
-        writeDataToFile('./data/users.json', users);
+        writeDataToFile(pathTofile, users);
 
         resolve(users)
     })
