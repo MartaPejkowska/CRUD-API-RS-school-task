@@ -46,7 +46,7 @@ The app can run in production mode or development mode
 The app best to test in Postman.
 Add request and check all routes.
   
-GET http://localhost:PORT/api/users
+GET http://localhost:PORT/api/users__
 GET http://localhost:PORT/api/users/userId
 POST http://localhost:PORT/api/users
   
