@@ -1,0 +1,119 @@
+[
+  {
+    "id": "8c5f45ce-0c1f-483f-9205-184837549429",
+    "username": "Frania",
+    "age": 25,
+    "hobbies": [
+      "reading",
+      "watching movies"
+    ]
+  },
+  {
+    "id": "8ddf4eff-7d66-43c2-8889-3fde44004fdd",
+    "username": "Basia",
+    "age": 41,
+    "hobbies": [
+      "walking with a dog",
+      "running"
+    ]
+  },
+  {
+    "id": "7ef028c0-96ba-4f1d-a026-7d631290b7b7",
+    "username": "Wojtek",
+    "age": 20,
+    "hobbies": [
+      "playing games",
+      "watching movies",
+      "cooking"
+    ]
+  },
+  {
+    "id": "ac4db2ad-8957-4e5a-8330-ac373fca5591",
+    "username": "Zosia",
+    "age": 45,
+    "hobbies": [
+      "swimming",
+      "running"
+    ]
+  },
+  {
+    "id": "9278450c-8137-4b91-a8cc-94e078f81915",
+    "username": "Zosia",
+    "age": 23,
+    "hobbies": [
+      "riding a bike"
+    ]
+  },
+  {
+    "id": "f2806c29-04bb-4d57-a26f-da3ca34db661",
+    "username": "Zdzichu",
+    "age": "50",
+    "hobbies": [
+      "drinking beer"
+    ]
+  },
+  {
+    "id": "cb1ebba9-ab74-4de6-bad0-2fd4d8acd0ac",
+    "username": "Tomek",
+    "age": "15",
+    "hobbies": [
+      "playing boardgames",
+      "watching movies",
+      "karate"
+    ]
+  },
+  {
+    "id": "53074f81-166e-4847-aa7f-fc0b6fc671e3",
+    "username": "Zosia",
+    "age": 23,
+    "hobbies": [
+      "riding a bike",
+      "watching Friends"
+    ]
+  },
+  {
+    "id": "db86fcbc-20ae-46ac-ac1f-792242485a50",
+    "username": "Zosia",
+    "age": 23,
+    "hobbies": [
+      "riding a bike",
+      "watching Friends"
+    ]
+  },
+  {
+    "id": "d9f144dc-f912-47fc-b83a-0ad8b44bf17a",
+    "username": "Zosia",
+    "age": "23",
+    "hobbies": [
+      "riding a bike",
+      "watching Friends"
+    ]
+  },
+  {
+    "id": "a0375f8e-a181-4132-afce-c791deac8035",
+    "username": "",
+    "age": "23",
+    "hobbies": [
+      "riding a bike",
+      "watching Friends"
+    ]
+  },
+  {
+    "id": "24eb13cf-ad0b-4cdc-bc2d-f83a70890abc",
+    "username": "Zuzia",
+    "age": "28",
+    "hobbies": [
+      "riding a bike",
+      "watching Friends"
+    ]
+  },
+  {
+    "id": "12967971-7a33-4dbd-b44a-33015c5ccf84",
+    "username": "Zuzanna",
+    "age": 28,
+    "hobbies": [
+      "riding a bike",
+      "watching Friends"
+    ]
+  }
+]

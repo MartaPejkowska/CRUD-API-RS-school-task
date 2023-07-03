@@ -1,0 +1,13 @@
+{   "include": ["src/**/*.json"],
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node"
+  }
+}
