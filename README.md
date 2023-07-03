@@ -41,22 +41,22 @@ The app can run in production mode or development mode
   npm run start:dev
 
   ```
-  ## 3. Application Use
+## 3. Application Use
 
-  The app best to test in Postman.
-  Add request and check all routes.
+The app best to test in Postman.
+Add request and check all routes.
   
-  GET http://localhost:PORT/api/users
-  GET http://localhost:PORT/api/users/userId
-  POST http://localhost:PORT/api/users
+GET http://localhost:PORT/api/users
+GET http://localhost:PORT/api/users/userId
+POST http://localhost:PORT/api/users
   
-  example body:
+example body:
   {"username":"Zosia",
    "age":23,
    "hobbies":["riding a bike","watching Friends"]}
   
-  PUT http://localhost:PORT/api/users/userId
-  DELETE http://localhost:PORT/api/users/userId
+PUT http://localhost:PORT/api/users/userId
+DELETE http://localhost:PORT/api/users/userId
 
 
 
