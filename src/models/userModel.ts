@@ -2,7 +2,6 @@ import Users from '../data/users.json'
 import { type Userstype } from '../data/user.type'
 import { writeDataToFile } from '../utilis'
 
-import { cwd } from 'node:process';
 import path from 'node:path';
 
 const pathTofile=path.resolve('src','data','users.json')

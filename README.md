@@ -38,8 +38,11 @@ The app can run in production mode or development mode
 - Development mode:
 
   ```
-  npm start:dev
+  npm run start:dev
+
   ```
+
+
 
 
 
